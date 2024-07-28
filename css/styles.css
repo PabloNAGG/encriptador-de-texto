@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --fondo: #e5e5e5e5;
+    --back-gr: #ffffff;
+    --azul: #0a3871;
+    --azul-claro: #d8dfe8;
+    --gris: #343a40;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+}
+
+::selection {
+    background: var(--azul);
+    color: var(--fondo);
+}
+
+body {
+    height: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    position: absolute;
+    margin: 40px 0px 0px 40px;
+}
+
+header .alura-logo {
+    width: 120px;
+    height: 48px;
+}
+
+main  {
+    display: flex;
+    flex-direction: row;
+    background-size: cover;
+    background-position: center;
+}
+
+.encriptador {
+    width: 60%;
+    margin: 168px 0px 0px 140px;
+    background: transparent;
+}
+
+.encriptar {
+    width: 660px;
+    height: 288px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+    outline: none;
+    border: 1px solid #c5c5c5;
+    border-radius: 15px;
+    resize: none;
+}
+
+.encriptar::placeholder, :focus {
+    color: var(--azul);
+}
+
+.aviso-encriptador {
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    gap: 8px;
+    position: absolute;
+    top: 500px;
+}
+
+.aviso-texto {
+    width: 100%;
+    font-style: normal;
+    font-weight: 400px;
+    font-size: 18px;
+    line-height: 150%;
+    opacity: 0.8;
+    color: #67808e;
+    
+}
+
+.encriptador-container {
+    display: flex;
+    margin-top: 10px;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 8px;
+    position: absolute;
+    top: 526px;
+}
+
+.boton-encriptar {
+    width: 330px;
+    height: 67px;
+    padding: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--back-gr);
+    background: var(--azul);
+    border: 1px solid var(--azul);
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.boton-encriptar:active {
+    color: var(--azul-claro);
+}
+
+.boton-desencriptar {
+    width: 330px;
+    height: 67px;
+    padding: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--azul);
+    background: var(--azul-claro);
+    border: 1px solid var(--azul);
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.boton-copy:active,
+.boton-desencriptar:active {
+    color: var(#0a38718a);
+}
+
+.tarjeta-texto {
+    width: 270px;
+    height: 580px;
+    background: var(--fondo);
+    box-shadow: 10px 24px 32px -8px var(--gris);
+    position: relative;
+    margin-top: 40px;
+    border-radius: 32px;
+    text-align: center;
+}
+
+.tarjeta-container {
+    width: 250px;
+    margin: auto;
+    margin-top: 50%;
+    background: var(--fondo);
+}
+
+.img-muñeco {
+    background: var(--fondo);
+}
+
+.texto-uno {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+    text-align: center;
+    color: var(--gris);
+    background: var(--fondo);
+}
+
+.texto-dos {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    text-align: center;
+    color: #67808e;
+    background: var(--fondo);
+}
+
+.evaluar {
+    width: 100%;
+    height: 490px;
+    position: absolute;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: #495057;
+    background: transparent;
+    border-top-right-radius: 32px;
+    border-top-left-radius: 32px;
+    border: none;
+    resize: none;
+}
+
+.evaluar:focus {
+    outline: none;
+}
+
+.boton-copy {
+    width: 225px;
+    height: 70px;
+    margin: 23px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+    padding: 24px;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    background: var(--azul-claro);
+    border: 1px solid var(--azul);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.boton-encriptar:hover,
+.boton-copy:hover {
+    background: var(--azul-claro);
+    color: #0a3871;
+}
+
+.boton-desencriptar:hover {
+    background: #0a3871;
+    color: var(--azul-claro);
+}
+
+.alura-logo:hover {
+    height: 52px;
+}
+
+footer {
+    margin-top: 25px;
+    padding: 10px;
+    border-top: 2px solid var(--fondo);
+    color: var(--gris);
+    text-align: center;
+    height: 5px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+@media(max-width: 1250px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .encriptador {
+        margin: 170px 0px 0px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .encriptador-container {
+        display: flex;
+        align-items: center;
+        position: inherit;
+    }
+
+    .aviso-encriptador {
+        position: inherit;
+        margin: 15px;
+    }
+
+    .tarjeta-texto {
+        width: 670px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .tarjeta-container {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        position: absolute;
+        bottom: 20%;
+        font-size: 25px;
+        font-weight: 700;
+    }
+
+    .img-muñeco {
+        display: none;
+    }
+
+    .boton-copy {
+        position: inherit;
+        width: 100%;
+    }
+
+    .evaluar {
+        width: 100%;
+        height: 210px;
+        padding: 10px;
+    }
+}
+
+@media(max-width: 720px) {
+    header .alura-logo {
+        padding: 2px;
+    }
+
+    .encriptar {
+        width: 90%;
+        font-size: 25px;
+    }
+
+    .encriptador-container {
+        display: grid;
+        gap: 21px;
+    }
+
+    .tarjeta-texto {
+        width: 90%;
+    }
+
+    .copy-right {
+        font-size: 20px;
+    }
+}
